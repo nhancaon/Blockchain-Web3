@@ -27,7 +27,7 @@ export default function Testimonials() {
 
   return (
     <div className="bg-[#f2f0eb] py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display text-[#0b0b0b] mb-4">
             Founders in Residence
@@ -37,7 +37,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

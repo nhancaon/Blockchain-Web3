@@ -27,7 +27,7 @@ export default function Partners() {
 
   return (
     <div id="partners" className="bg-[#111111] py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display text-white mb-4">
             Backed by Continental Institutions
@@ -39,7 +39,7 @@ export default function Partners() {
 
         <div className="mb-16">
           <h3 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-8 text-center">Investor Network</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {investors.map((investor, index) => (
               <div
                 key={index}
@@ -53,7 +53,7 @@ export default function Partners() {
 
         <div>
           <h3 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-8 text-center">Ecosystem Partners</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {partners.map((partner, index) => (
               <div
                 key={index}

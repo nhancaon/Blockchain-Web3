@@ -43,7 +43,7 @@ export default function Portfolio() {
 
   return (
     <div id="portfolio" className="bg-white py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display text-[#0b0b0b] mb-4">
             Portfolio Curated Across Europe
@@ -53,7 +53,7 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-6 md:grid-cols-2">
           {featured.map((project, index) => (
             <div
               key={index}

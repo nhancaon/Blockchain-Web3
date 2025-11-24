@@ -12,7 +12,7 @@ export default function Apply() {
 
   return (
     <div id="apply" className="bg-[#0c0c0c] py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-display mb-6">
             Applications for the Winter Studio

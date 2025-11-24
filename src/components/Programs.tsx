@@ -45,7 +45,7 @@ export default function Programs() {
 
   return (
     <div id="programs" className="bg-[#f6f4ee] py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display text-[#0b0b0b] mb-4">
             Tailored Residencies
