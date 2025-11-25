@@ -1,68 +1,75 @@
-export default function Partners() {
-  const investors = [
-    'Sequoia Capital',
-    'Andreessen Horowitz',
-    'Paradigm',
-    'Coinbase Ventures',
-    'Binance Labs',
-    'Pantera Capital',
-    'Digital Currency Group',
-    'Polychain Capital',
-    'Framework Ventures',
-    'Dragonfly Capital',
-    'Alameda Research',
-    'Three Arrows Capital'
-  ];
+import { ArrowRight, Building2, Layers, DollarSign, Globe } from 'lucide-react';
 
-  const partners = [
-    'Ethereum Foundation',
-    'Polygon',
-    'Solana Foundation',
-    'Avalanche',
-    'Near Protocol',
-    'Cosmos',
-    'Polkadot',
-    'Chainlink'
+export default function Partners() {
+  const categories = [
+    {
+      icon: Globe,
+      title: 'Government & Ecosystem Enablers',
+      items: ['NIC', 'Da Nang Innovation Hub', 'National blockchain associations']
+    },
+    {
+      icon: Layers,
+      title: 'Blockchain Foundations & Infra Partners',
+      items: ['Solana', 'Aptos', 'APAC-friendly ecosystems']
+    },
+    {
+      icon: DollarSign,
+      title: 'Financial Institutions',
+      items: ['Banks', 'Digital banks', 'Payments & remittance networks']
+    },
+    {
+      icon: Building2,
+      title: 'Enterprises & Corporates',
+      items: ['Exporters', 'Manufacturers', 'Real estate & tourism groups']
+    }
   ];
 
   return (
-    <div id="partners" className="bg-[#111111] py-24">
+    <div id="partners" className="bg-white py-24">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display text-white mb-4">
-            Backed by Continental Institutions
+          <h2 className="text-4xl md:text-5xl font-display text-black mb-6">
+            Our Global Partners
           </h2>
-          <p className="text-lg text-white/60 max-w-3xl mx-auto">
-            Private offices, venture houses, and protocol foundations across Europe, Asia, and the US.
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              className="bg-[#f6f4ee] rounded-2xl p-8 border border-black/10"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 border border-black/10 rounded-full bg-white">
+                  <category.icon className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-black">{category.title}</h3>
+              </div>
+              <ul className="space-y-3">
+                {category.items.map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-black flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-base md:text-lg text-black/80">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mb-12">
+          <a href="#apply" className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-neutral-900 transition-colors">
+            <span>Become an Ecosystem Partner</span>
+            <ArrowRight className="w-5 h-5" />
+          </a>
+        </div>
+
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg md:text-xl text-black/70 leading-relaxed">
+            <strong className="text-black">Impact Vision:</strong> Turn APAC into the most active corridor for enterprise-ready Web3 & RWA pilots by 2027.
           </p>
-        </div>
-
-        <div className="mb-16">
-          <h3 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-8 text-center">Investor Network</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {investors.map((investor, index) => (
-              <div
-                key={index}
-                className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 text-center transition-all duration-300"
-              >
-                <div className="text-white font-medium">{investor}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-8 text-center">Ecosystem Partners</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {partners.map((partner, index) => (
-              <div
-                key={index}
-                className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 text-center transition-all duration-300"
-              >
-                <div className="text-white font-medium">{partner}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>

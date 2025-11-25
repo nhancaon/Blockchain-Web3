@@ -1,4 +1,4 @@
-import { Rocket, ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -7,18 +7,18 @@ export default function Hero() {
 
       <nav className="relative z-10 container mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
         <div className="flex items-center space-x-2 uppercase tracking-[0.3em] text-xs text-white/70">
-          <Rocket className="w-6 h-6 text-white" />
-          <span>Web3 Accelerator</span>
+          <span>APAC Web3 Accelerator</span>
         </div>
         <div className="hidden md:flex space-x-8 text-sm tracking-wide">
-          <a href="#programs" className="hover:text-white transition-colors">Programs</a>
-          <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
-          <a href="#partners" className="hover:text-white transition-colors">Partners</a>
+          <a href="#program" className="hover:text-white transition-colors">Program</a>
+          <a href="#tracks" className="hover:text-white transition-colors">Tracks</a>
           <a href="#apply" className="hover:text-white transition-colors">Apply</a>
+          <a href="#partners" className="hover:text-white transition-colors">Partners</a>
+          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
         </div>
-        <button className="bg-white text-black px-6 py-2 rounded-full text-xs font-semibold tracking-wide hover:bg-[#f5f3ee] transition-colors">
+        <a href="#apply" className="bg-white text-black px-6 py-2 rounded-full text-xs font-semibold tracking-wide hover:bg-[#f5f3ee] transition-colors">
           Apply Now
-        </button>
+        </a>
       </nav>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 md:py-28">
@@ -26,26 +26,30 @@ export default function Hero() {
           <div className="order-2 lg:order-1 w-full max-w-4xl text-center lg:text-left">
             <div className="inline-flex items-center space-x-3 text-xs uppercase tracking-[0.5em] text-white/60 mb-8 mx-auto lg:mx-0">
               <div className="h-px w-12 bg-white/40" />
-              <span>European Web3 House</span>
+              <span>Built in Asia. Visible Globally.</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-7xl leading-tight mb-8">
-              <span className="block text-white/80 font-light">Crafting the</span>
-              <span className="block font-display text-white">
-                Future of Decentralised Finance
-              </span>
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl leading-tight mb-6 font-display">
+              APAC Web3 Accelerator 2026
             </h1>
-            <p className="text-base sm:text-xl md:text-2xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              A monochrome, design-led accelerator for European blockchain founders. We blend capital,
-              cultural insight, and an international investor syndicate to launch enduring ventures.
+            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 font-semibold">
+              Real Pilots. Real Partners. Real-World Impact.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-white text-black px-8 py-4 rounded-full font-semibold text-base transition-all hover:translate-y-0.5 flex items-center justify-center space-x-2">
-                <span>Start Your Residency</span>
+            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0">
+              Accelerating enterprise-ready Web3 × AI innovation across Asia Pacific.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <a href="#apply" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-base transition-all hover:translate-y-0.5 flex items-center justify-center space-x-2">
+                <span>Apply Now</span>
                 <ArrowRight className="w-5 h-5" />
+              </a>
+              <p className="text-xs text-white/60">Start your application in 3 minutes.</p>
+            </div>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <button className="border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:bg-white/5 flex items-center justify-center space-x-2">
+                <Download className="w-5 h-5" />
+                <span>Download Program Deck</span>
               </button>
-              <button className="border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:bg-white/5">
-                Explore the Studio
-              </button>
+              <p className="text-xs text-white/60">Get the full program overview (PDF).</p>
             </div>
           </div>
 
@@ -70,7 +74,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#f6f4ee] to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
     </div>
   );
 }

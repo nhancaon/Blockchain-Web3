@@ -1,4 +1,4 @@
-import { Rocket, Twitter, Github, Linkedin, Mail } from 'lucide-react';
+import { Twitter, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -6,32 +6,22 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-3 mb-4 uppercase tracking-[0.3em] text-xs text-white/60">
-              <Rocket className="w-6 h-6 text-white" />
-              <span>Web3 Accelerator</span>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-white">APAC Web3 Accelerator 2026</h3>
             </div>
-            <p className="text-white/60 leading-relaxed">
-              A monochrome residency for blockchain ventures anchored in Europe and scaling globally.
+            <p className="text-white/60 leading-relaxed text-sm">
+              Built in Asia. Visible Globally.
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Programs</h4>
+            <h4 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Navigation</h4>
             <ul className="space-y-2 text-white">
-              <li><a href="#programs" className="hover:text-white/60 transition-colors">Base Camp</a></li>
-              <li><a href="#programs" className="hover:text-white/60 transition-colors">Accelerate</a></li>
-              <li><a href="#programs" className="hover:text-white/60 transition-colors">Scale Up</a></li>
+              <li><a href="#program" className="hover:text-white/60 transition-colors">Program</a></li>
+              <li><a href="#tracks" className="hover:text-white/60 transition-colors">Tracks</a></li>
               <li><a href="#apply" className="hover:text-white/60 transition-colors">Apply</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Resources</h4>
-            <ul className="space-y-2 text-white">
-              <li><a href="#portfolio" className="hover:text-white/60 transition-colors">Portfolio</a></li>
               <li><a href="#partners" className="hover:text-white/60 transition-colors">Partners</a></li>
-              <li><a href="#" className="hover:text-white/60 transition-colors">Journal</a></li>
-              <li><a href="#" className="hover:text-white/60 transition-colors">Events</a></li>
+              <li><a href="#faq" className="hover:text-white/60 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -42,28 +32,22 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors">
-                <Mail className="w-5 h-5" />
-              </a>
             </div>
-            <p className="text-white/60 text-sm">
-              hello@web3accelerator.io
-            </p>
+          </div>
+
+          <div>
+            <h4 className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Resources</h4>
+            <ul className="space-y-2 text-white">
+              <li><a href="#" className="hover:text-white/60 transition-colors">Program Deck</a></li>
+              <li><a href="#" className="hover:text-white/60 transition-colors">Partnership Info</a></li>
+            </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-sm">
-          <p>&copy; 2024 Web3 Accelerator. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white/80 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white/80 transition-colors">Terms</a>
-            <a href="#" className="hover:text-white/80 transition-colors">Cookies</a>
-          </div>
+          <p>&copy; 2026 APAC Web3 Accelerator. All rights reserved.</p>
         </div>
       </div>
     </footer>

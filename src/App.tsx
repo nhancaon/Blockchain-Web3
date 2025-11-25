@@ -1,23 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
-import Programs from './components/Programs';
-import Portfolio from './components/Portfolio';
+import WhyAPAC from './components/WhyAPAC';
+import AboutProgram from './components/AboutProgram';
+import WhoShouldApply from './components/WhoShouldApply';
+import FocusTracks from './components/FocusTracks';
+import ProgramJourney from './components/ProgramJourney';
+import WhatTeamsGet from './components/WhatTeamsGet';
 import Partners from './components/Partners';
-import Testimonials from './components/Testimonials';
-import Apply from './components/Apply';
+import ReadyToApply from './components/ReadyToApply';
+import FAQs from './components/FAQs';
 import Footer from './components/Footer';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-[#f6f4ee] text-[#0b0b0b]">
+    <div className="min-h-screen bg-white">
       <Hero />
-      <Stats />
-      <Programs />
-      <Portfolio />
+      <WhyAPAC />
+      <AboutProgram />
+      <WhoShouldApply />
+      <FocusTracks />
+      <ProgramJourney />
+      <WhatTeamsGet />
       <Partners />
-      <Testimonials />
-      <Apply />
+      <ReadyToApply />
+      <FAQs />
       <Footer />
     </div>
   );
