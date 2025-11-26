@@ -4,54 +4,60 @@ export default function ProgramJourney() {
   const phases = [
     {
       icon: Rocket,
-      title: 'Phase 1 — Launch & Awareness',
+      title: 'Phase 1 — Global Launch & Ecosystem Activation',
       period: 'Late Jan',
+      tagline: 'We launch. You accelerate.',
       items: [
-        'Global launch event in Dubai',
-        'SEA ecosystem roadshow',
+        'Global launch in Dubai',
+        'SEA ecosystem activation',
         'Applications open'
       ]
     },
     {
       icon: Users,
-      title: 'Phase 2 — Selection & Onboarding',
+      title: 'Phase 2 — Screening, Selection & Onboarding',
       period: 'Feb–Mid Mar',
+      tagline: 'Top teams rise fast.',
       items: [
         'AI-assisted screening → Top 50',
-        'Virtual onboarding & track assignment',
-        'Mentor + enterprise partner matching'
+        'Rapid onboarding',
+        'Track assignment + mentor pairing',
+        'Selection focuses on technical depth, enterprise-readiness, and real-world feasibility.'
       ]
     },
     {
       icon: Code,
-      title: 'Phase 3 — Ideation & MVP Build',
+      title: 'Phase 3 — Ideation, Product Architecture & MVP Build',
       period: 'Mar–Apr',
+      tagline: 'Build. Ship. Iterate.',
       items: [
-        'Token models, compliance, architecture clinics',
-        'APAC Enterprise integration workshops',
+        'Token models + architecture deep dives',
+        'Enterprise integration workshops',
         'Monthly VC Speed Dating',
-        'Target: 20+ MVPs/POCs ready for pilot'
+        'Target: 20+ MVPs/POCs ready for pilots'
       ]
     },
     {
       icon: Target,
-      title: 'Phase 4 — Pilot Design & Scale Prep',
+      title: 'Phase 4 — Pilot Design, Testing & Scale Preparation',
       period: 'Apr',
+      tagline: 'Your pilot = your strongest traction.',
       items: [
-        'User testing, data integration',
-        'Pitch bootcamp: narrative, GTM, valuation',
+        'User testing + data integration',
+        'Narrative & GTM bootcamp',
         'Corporate deep dives',
-        'Selection of Top 30 Demo Day teams'
+        'Top 30 shortlisted for Demo Day'
       ]
     },
     {
       icon: Trophy,
-      title: 'Phase 5 — Demo Day & Graduation',
+      title: 'Phase 5 — Demo Day, Deal-Making & Graduation',
       period: 'May',
+      tagline: 'Show. Win. Raise.',
       items: [
         'Demo Day @ Da Nang Convention Center',
-        'Pilot closing, investor deal-making',
-        'Cohort impact report & graduation'
+        'Investor deals + pilot finalization',
+        'Cohort impact report & post-program track'
       ]
     }
   ];
@@ -75,12 +81,17 @@ export default function ProgramJourney() {
                   </div>
                   <div className="flex-1 pb-12">
                     <div className="bg-[#f6f4ee] rounded-2xl p-8 border border-black/10">
-                      <div className="flex items-center justify-between mb-4 flex-col sm:flex-row gap-4">
+                      <div className="flex items-center justify-between mb-2 flex-col sm:flex-row gap-4">
                         <h3 className="text-2xl md:text-3xl font-semibold text-black">{phase.title}</h3>
                         <span className="text-sm font-semibold tracking-wide text-black/60 bg-white px-4 py-2 rounded-full">
                           {phase.period}
                         </span>
                       </div>
+                      {phase.tagline && (
+                        <p className="text-lg md:text-xl font-semibold text-black/80 mb-4 italic">
+                          "{phase.tagline}"
+                        </p>
+                      )}
                       <ul className="space-y-3">
                         {phase.items.map((item, idx) => (
                           <li key={idx} className="flex items-start gap-3">

@@ -59,17 +59,18 @@ export default function Partners() {
           ))}
         </div>
 
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-8">
+            Backed by APAC's strongest enterprise, government, and Web3 infrastructure partners.
+          </p>
+        </div>
+
         <div className="text-center mb-12">
           <a href="#apply" className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-neutral-900 transition-colors">
             <span>Become an Ecosystem Partner</span>
             <ArrowRight className="w-5 h-5" />
           </a>
-        </div>
-
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-lg md:text-xl text-black/70 leading-relaxed">
-            <strong className="text-black">Impact Vision:</strong> Turn APAC into the most active corridor for enterprise-ready Web3 & RWA pilots by 2027.
-          </p>
+          <p className="text-sm text-black/60 mt-3">Join our enterprise & innovation network.</p>
         </div>
       </div>
     </div>

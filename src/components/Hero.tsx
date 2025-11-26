@@ -35,14 +35,14 @@ export default function Hero() {
               Real Pilots. Real Partners. Real-World Impact.
             </p>
             <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              Accelerating enterprise-ready Web3 × AI innovation across Asia Pacific.
+              The first APAC accelerator dedicated to real-world Web3 deployment — powered by enterprise partners, compliant sandboxes, and a region where adoption is already happening.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
               <a href="#apply" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-base transition-all hover:translate-y-0.5 flex items-center justify-center space-x-2">
                 <span>Apply Now</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <p className="text-xs text-white/60">Start your application in 3 minutes.</p>
+              <p className="text-xs text-white/60">Fast-track your eligibility check.</p>
             </div>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
               <button className="border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:bg-white/5 flex items-center justify-center space-x-2">

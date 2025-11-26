@@ -4,17 +4,17 @@ export default function AboutProgram() {
   const highlights = [
     {
       icon: Rocket,
-      title: 'Deploy with Real Enterprises — Not Just POCs',
+      title: 'Real Pilots with Real Enterprise Data',
       description: 'Work directly with enterprise partners on real-world deployments, not theoretical proof-of-concepts.'
     },
     {
       icon: Zap,
-      title: 'Web3 × AI Execution Support — End-to-End',
+      title: 'End-to-End Web3 Execution Support',
       description: 'Comprehensive support from token design to AI pipeline integration and data strategy.'
     },
     {
       icon: Target,
-      title: 'Designed for Integration, Not Speculation',
+      title: 'Built for Compliance, Integration & Scale',
       description: 'Focus on real-world use cases that integrate seamlessly with existing enterprise infrastructure.'
     },
     {
@@ -24,7 +24,7 @@ export default function AboutProgram() {
     },
     {
       icon: Users,
-      title: 'Investor Access, Triggered by Traction',
+      title: 'Investor Access Triggered by Enterprise Traction',
       description: 'Connect with VCs, family offices, and institutional investors based on real pilot results.'
     }
   ];
@@ -37,7 +37,7 @@ export default function AboutProgram() {
             A Pilot-Driven Web3 Accelerator Built for APAC
           </h2>
           <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
-            APAC Web3 Accelerator 2026 isn't just another startup program — it's a launchpad for real-world deployment.
+            APAC Web3 Accelerator 2026 is not another theoretical program. It is a launchpad for real utility.
           </p>
           <p className="text-lg md:text-xl text-black/70 leading-relaxed">
             Designed for Web3 × AI × Data founders solving enterprise-grade problems, the program helps teams go beyond the pitch deck and build where adoption is happening: across supply chains, financial rails, and real-world assets throughout Asia Pacific.

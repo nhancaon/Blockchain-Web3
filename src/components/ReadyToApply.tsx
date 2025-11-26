@@ -32,7 +32,7 @@ export default function ReadyToApply() {
             Ready to Apply
           </h2>
           <p className="text-lg md:text-xl mb-12 text-white/70 leading-relaxed">
-            Begin your journey to the 2026 cohort
+            Begin your journey to the 2026 cohort.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -62,6 +62,7 @@ export default function ReadyToApply() {
             <span>Start Your Application</span>
             <ArrowRight className="w-5 h-5" />
           </a>
+          <p className="text-sm text-white/60 mt-4">(Typeform Integration)</p>
         </div>
       </div>
     </div>

@@ -29,21 +29,59 @@ export default function WhyAPAC() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-display text-black mb-6 text-center">
-            Why APAC, Why Now?
+            The World's Most Active Corridor for Web3 Deployment
           </h2>
-          <p className="text-lg md:text-xl text-black/70 mb-12 text-center leading-relaxed">
-            APAC is becoming the world's most dynamic corridor for Web3 × AI adoption — driven by enterprise demand, regulatory openness, and massive real-world data flows.
+          <p className="text-xl md:text-2xl text-black font-semibold mb-4 text-center">
+            APAC isn't waiting for Web3.
           </p>
-          <div className="space-y-6">
-            {points.map((point, index) => (
-              <div key={index} className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
-                <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
-                  <point.icon className="w-5 h-5 text-black" />
-                </div>
-                <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">{point.text}</p>
+          <p className="text-xl md:text-2xl text-black font-semibold mb-8 text-center">
+            APAC is using Web3.
+          </p>
+          <div className="space-y-6 mb-8">
+            <div className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
+              <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
+                <Globe className="w-5 h-5 text-black" />
               </div>
-            ))}
+              <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">
+                <strong>60% of global supply chain flows</strong> run through APAC (World Bank)
+              </p>
+            </div>
+            <div className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
+              <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
+                <TrendingUp className="w-5 h-5 text-black" />
+              </div>
+              <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">
+                <strong>SEA is the #1 digital payments adopter</strong> globally (McKinsey)
+              </p>
+            </div>
+            <div className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
+              <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
+                <Shield className="w-5 h-5 text-black" />
+              </div>
+              <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">
+                <strong>Governments are enabling</strong> RWA, digital ID, sandboxes, tokenization
+              </p>
+            </div>
+            <div className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
+              <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
+                <Building2 className="w-5 h-5 text-black" />
+              </div>
+              <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">
+                <strong>Enterprises demand solutions</strong> — not speculation
+              </p>
+            </div>
+            <div className="flex items-start gap-4 bg-[#f6f4ee] rounded-xl p-6 border border-black/5">
+              <div className="p-3 border border-black/10 rounded-full bg-white flex-shrink-0">
+                <Zap className="w-5 h-5 text-black" />
+              </div>
+              <p className="text-base md:text-lg text-black/80 leading-relaxed pt-1">
+                <strong>Startups find</strong> lower regulatory barriers + faster rollout + real user demand
+              </p>
+            </div>
           </div>
+          <p className="text-xl md:text-2xl text-black font-semibold text-center">
+            APAC is where real-world Web3 demand actually exists.
+          </p>
         </div>
       </div>
     </div>

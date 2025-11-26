@@ -4,29 +4,31 @@ export default function FocusTracks() {
   const tracks = [
     {
       icon: Package,
-      title: 'Track 1: Supply Chain Transparency',
+      title: 'Track 1 — Supply Chain Transparency',
       items: [
-        'On-chain supply traceability',
+        'On-chain traceability',
         'Tokenized bills of lading',
-        'ESG & carbon compliance for global markets'
+        'ESG & carbon compliance'
       ]
     },
     {
       icon: DollarSign,
-      title: 'Track 2: Fintech & Embedded Finance',
+      title: 'Track 2 — Fintech & Payments',
       items: [
-        'Stablecoin payroll & remittance rails',
-        'AI-driven credit scoring',
-        'Embedded lending and liquidity for SMEs'
+        'Stablecoin payroll',
+        'Remittance rails',
+        'On-chain audit',
+        'Liquidity for SMEs'
       ]
     },
     {
       icon: Home,
-      title: 'Track 3: RWA & Data/IP',
+      title: 'Track 3 — Real-World Assets (RWA) & On-Chain Data',
       items: [
-        'Tokenized real estate & tourism assets',
-        'On-chain education credentials',
-        'Data/IP vaults for creators, universities, and enterprises'
+        'Tokenized real estate',
+        'Tourism assets',
+        'On-chain credentials',
+        'IP/data vaults'
       ]
     }
   ];
