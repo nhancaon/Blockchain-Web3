@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 interface CollapsibleCardProps {
   title: string;
@@ -16,25 +17,20 @@ export default function CollapsibleCard({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className={`border-gold-gradient rounded-lg overflow-hidden mb-4 ${className}`}>
+    <div className={`rounded-xl overflow-hidden mb-4 ${className}`}>
       <button
-        className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
+        className="w-full px-6 py-4 text-left flex justify-between items-center bg-black/30 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span className="text-lg font-medium text-gray-900">{title}</span>
-        <svg
-          className={`w-5 h-5 text-gray-500 transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
+        <span className="text-lg font-medium text-white">{title}</span>
+        <ChevronDown
+          className={`w-5 h-5 text-white transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
+        />
       </button>
       {isOpen && (
-        <div className="px-6 pb-4 pt-2 bg-white">
-          <div className="prose max-w-none">
+        <div className="px-6 pb-4 pt-2 bg-black/20 backdrop-blur-sm border border-t-0 border-white/10">
+          <div className="prose max-w-none text-white/80">
             {children}
           </div>
         </div>

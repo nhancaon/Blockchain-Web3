@@ -8,6 +8,7 @@ export default function FocusTracks() {
     {
       icon: Package,
       title: 'Track 1 — Supply Chain Transparency',
+      description: 'On-chain traceability, tokenized bills of lading, ESG & carbon compliance',
       items: [
         'On-chain traceability',
         'Tokenized bills of lading',
@@ -17,6 +18,7 @@ export default function FocusTracks() {
     {
       icon: DollarSign,
       title: 'Track 2 — Fintech & Payments',
+      description: 'Stablecoin payroll, remittance rails, on-chain audit, liquidity for SMEs',
       items: [
         'Stablecoin payroll',
         'Remittance rails',
@@ -27,6 +29,7 @@ export default function FocusTracks() {
     {
       icon: Home,
       title: 'Track 3 — Real-World Assets (RWA) & On-Chain Data',
+      description: 'Tokenized real estate, tourism assets, on-chain credentials, IP/data vaults',
       items: [
         'Tokenized real estate',
         'Tourism assets',
@@ -41,41 +44,50 @@ export default function FocusTracks() {
   };
 
   return (
-    <div id="tracks" className="bg-black text-white py-24">
-      <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl md:text-5xl font-display mb-16 text-center">
-          Focus Tracks
-        </h2>
-        <div className="max-w-4xl mx-auto space-y-4">
+    <div className="relative bg-gradient-to-br from-black via-neutral-950 to-black text-white overflow-hidden py-24">
+      <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 45%), radial-gradient(circle at 80% 0%, rgba(245,238,220,0.05), transparent 40%)' }}></div>
+
+      <div className="relative z-10 container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-display mb-6 text-white animate-fade-in-up">
+            Focus <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Tracks</span>
+          </h2>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto animate-fade-in-up stagger-1">
+            Specialized tracks designed to accelerate real-world Web3 deployment across key APAC sectors
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto space-y-6">
           {tracks.map((track, index) => (
             <div
               key={index}
-              className="border-gold-gradient bg-neutral-900 rounded-xl overflow-hidden"
+              className="bg-black/30 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 animate-fade-in-up stagger-2"
             >
               <button
                 onClick={() => toggleTrack(index)}
-                className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-neutral-800 transition-colors"
+                className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-black/20 transition-colors"
                 aria-expanded={expandedTrack === index}
               >
                 <div className="flex items-center gap-4">
-                  <div className="p-2 border border-white/20 rounded-full">
-                    <track.icon className="w-6 h-6" />
+                  <div className="p-3 rounded-lg bg-gradient-to-br from-blue-600 to-purple-700">
+                    <track.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold">{track.title}</h3>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">{track.title}</h3>
+                    <p className="text-sm text-white/70 mt-1">{track.description}</p>
+                  </div>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform ${expandedTrack === index ? 'rotate-180' : ''}`}
+                  className={`w-5 h-5 text-white transition-transform ${expandedTrack === index ? 'rotate-180' : ''}`}
                 />
               </button>
 
               {expandedTrack === index && (
-                <div className="px-6 pb-5 pt-2">
-                  <ul className="space-y-3 pl-12">
+                <div className="px-6 pb-6 pt-2">
+                  <ul className="space-y-3 pl-16">
                     {track.items.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <svg className="w-4 h-4 text-white mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
+                        <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
                         <span className="text-base text-white/80">{item}</span>
                       </li>
                     ))}
@@ -85,8 +97,9 @@ export default function FocusTracks() {
             </div>
           ))}
         </div>
+
+
       </div>
     </div>
   );
 }
-

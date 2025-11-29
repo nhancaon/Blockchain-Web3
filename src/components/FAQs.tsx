@@ -27,32 +27,41 @@ export default function FAQs() {
     }
   ];
 
+
   return (
-    <div id="faq" className="bg-black py-24 relative overflow-hidden">
+    <div className="relative bg-gradient-to-br from-black via-neutral-950 to-black text-white overflow-hidden py-24">
+      <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 45%), radial-gradient(circle at 80% 0%, rgba(245,238,220,0.05), transparent 40%)' }}></div>
+
       <div className="relative z-10 container mx-auto px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-display mb-16 text-center text-white">
-            Q&A
-          </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display mb-6 text-white animate-fade-in-up">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Q&A</span>
+            </h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto animate-fade-in-up stagger-1">
+              Everything you need to know about the <span className="text-blue-300">APAC Web3 Accelerator</span> program
+            </p>
+          </div>
+
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl border border-black/10 overflow-hidden"
+                className="bg-black/30 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-purple-500/30 transition-all duration-300 animate-fade-in-up stagger-3"
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-[#f9f9f9] transition-colors"
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-black/20 transition-colors"
                 >
-                  <h3 className="text-lg font-semibold text-black">{faq.question}</h3>
+                  <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
                   <ChevronDown
-                    className={`w-5 h-5 text-black transition-transform ${openIndex === index ? 'rotate-180' : ''
+                    className={`w-5 h-5 text-blue-400 transition-transform ${openIndex === index ? 'rotate-180' : ''
                       }`}
                   />
                 </button>
                 {openIndex === index && (
                   <div className="px-8 pb-6">
-                    <p className="text-black/70 leading-relaxed">{faq.answer}</p>
+                    <p className="text-white/80 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>
@@ -63,4 +72,3 @@ export default function FAQs() {
     </div>
   );
 }
-

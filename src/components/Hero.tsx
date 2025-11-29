@@ -10,13 +10,13 @@ export default function Hero() {
           <span>APAC Web3 Accelerator</span>
         </div>
         <div className="hidden md:flex space-x-8 text-sm tracking-wide">
-          <a href="#program" className="hover:text-white transition-colors">Program</a>
-          <a href="#tracks" className="hover:text-white transition-colors">Tracks</a>
-          <a href="#apply" className="hover:text-white transition-colors">Apply</a>
-          <a href="#partners" className="hover:text-white transition-colors">Partners</a>
-          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
+          <a href="#program" className="hover:text-blue-400 transition-colors">Program</a>
+          <a href="#tracks" className="hover:text-purple-400 transition-colors">Tracks</a>
+          <a href="#apply" className="hover:text-blue-400 transition-colors">Apply</a>
+          <a href="#partners" className="hover:text-purple-400 transition-colors">Partners</a>
+          <a href="#faq" className="hover:text-blue-400 transition-colors">FAQ</a>
         </div>
-        <a href="#apply" className="bg-white text-black px-6 py-2 rounded-full text-xs font-semibold tracking-wide hover:bg-[#f5f3ee] transition-colors">
+        <a href="#apply" className="bg-gradient-to-r from-blue-600 to-purple-700 text-white px-6 py-2 rounded-full text-xs font-semibold tracking-wide hover:opacity-90 transition-all animate-pulse-gold">
           Apply Now
         </a>
       </nav>
@@ -24,29 +24,30 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 md:py-28">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
           <div className="order-2 lg:order-1 w-full max-w-4xl text-center lg:text-left">
-            <div className="inline-flex items-center space-x-3 text-xs uppercase tracking-[0.5em] text-white/60 mb-8 mx-auto lg:mx-0">
-              <div className="h-px w-12 bg-white/40" />
+            <div className="inline-flex items-center space-x-3 text-xs uppercase tracking-[0.5em] text-white/60 mb-8 mx-auto lg:mx-0 animate-fade-in-up">
+              <div className="h-px w-12 bg-gradient-to-r from-blue-500 to-purple-600" />
               <span>Built in Asia. Visible Globally.</span>
+              <div className="h-px w-12 bg-gradient-to-l from-blue-500 to-purple-600" />
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-7xl leading-tight mb-6 font-display">
-              APAC Web3 Accelerator
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl leading-tight mb-6 font-display animate-fade-in-up stagger-1">
+              APAC <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 animate-text-glow">Web3</span> Accelerator
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 font-semibold">
-              Real Pilots. Real Partners. Real Adoption.
+            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 font-semibold animate-fade-in-up stagger-2">
+              Real <span className="text-blue-300">Pilots</span>. Real <span className="text-purple-300">Partners</span>. Real <span className="text-blue-300 animate-text-pop">Adoption</span>.
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              The APAC accelerator enabling real pilots, enterprise integration, and regulated Web3 deployment. APAC sandboxes.
+            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0 animate-fade-in-up stagger-3">
+              The APAC accelerator enabling real pilots, enterprise integration, and regulated Web3 deployment. <span className="text-blue-300">APAC sandboxes</span>.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-              <a href="#apply" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-base transition-all hover:translate-y-0.5 flex items-center justify-center space-x-2">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-up stagger-4">
+              <a href="#apply" className="bg-gradient-to-r from-blue-600 to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:opacity-90 hover:scale-105 flex items-center justify-center space-x-2 shadow-lg shadow-blue-500/20 animate-pulse-gold">
                 <span>Apply Now</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               <p className="text-xs text-white/60">Fast-track your eligibility check.</p>
             </div>
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-              <button className="border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:bg-white/5 flex items-center justify-center space-x-2">
-                <Download className="w-5 h-5" />
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-up stagger-5">
+              <button className="border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:bg-gradient-to-r from-blue-600/20 to-purple-700/20 flex items-center justify-center space-x-2 group">
+                <Download className="w-5 h-5 group-hover:text-blue-300 transition-colors" />
                 <span>Download Program Deck</span>
               </button>
               <p className="text-xs text-white/60">Get the full program overview (PDF).</p>
@@ -74,7 +75,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
     </div>
   );
 }
