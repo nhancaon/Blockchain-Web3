@@ -29,13 +29,13 @@ export default function Hero() {
               <span>Built in Asia. Visible Globally.</span>
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-7xl leading-tight mb-6 font-display">
-              APAC Web3 Accelerator 2026
+              APAC Web3 Accelerator
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 font-semibold">
-              Real Pilots. Real Partners. Real-World Impact.
+              Real Pilots. Real Partners. Real Adoption.
             </p>
             <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              The first APAC accelerator dedicated to real-world Web3 deployment — powered by enterprise partners, compliant sandboxes, and a region where adoption is already happening.
+              The APAC accelerator enabling real pilots, enterprise integration, and regulated Web3 deployment. APAC sandboxes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
               <a href="#apply" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-base transition-all hover:translate-y-0.5 flex items-center justify-center space-x-2">
@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 flex flex-col items-center text-center lg:text-right space-y-6 lg:ml-auto">
+          <div className="order-1 lg:order-2 flex flex-col items-center text-center lg:text-right space-y-6 lg:ml-auto lg:mr-10">
             <div className="hero-cube-scene">
               <div className="hero-cube-glow" />
               <div className="hero-cube-orbit hero-cube-orbit--outer" />

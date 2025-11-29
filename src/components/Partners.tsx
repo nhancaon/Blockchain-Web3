@@ -25,10 +25,10 @@ export default function Partners() {
   ];
 
   return (
-    <div id="partners" className="bg-white py-24">
-      <div className="container mx-auto px-4 sm:px-6">
+    <div id="partners" className="bg-black py-24 relative overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display text-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-display mb-6 text-white">
             Our Global Partners
           </h2>
         </div>
@@ -37,21 +37,19 @@ export default function Partners() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-[#f6f4ee] rounded-2xl p-8 border border-black/10"
+              className="bg-white rounded-2xl p-8 border border-black/10"
             >
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 border border-black/10 rounded-full bg-white">
                   <category.icon className="w-6 h-6 text-black" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-black">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-black">{category.title}</h3>
               </div>
               <ul className="space-y-3">
-                {category.items.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-black flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-base md:text-lg text-black/80">{item}</span>
+                {category.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-black/40 rounded-full flex-shrink-0"></div>
+                    <span className="text-black/80">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -60,7 +58,7 @@ export default function Partners() {
         </div>
 
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-8">
             Backed by APAC's strongest enterprise, government, and Web3 infrastructure partners.
           </p>
         </div>

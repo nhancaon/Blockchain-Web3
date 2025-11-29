@@ -28,11 +28,11 @@ export default function FAQs() {
   ];
 
   return (
-    <div id="faq" className="bg-[#f6f4ee] py-24">
-      <div className="container mx-auto px-4 sm:px-6">
+    <div id="faq" className="bg-black py-24 relative overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-display text-black mb-16 text-center">
-            Need Clarity
+          <h2 className="text-4xl md:text-5xl font-display mb-16 text-center text-white">
+            Q&A
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -42,17 +42,17 @@ export default function FAQs() {
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#f6f4ee] transition-colors"
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-[#f9f9f9] transition-colors"
                 >
-                  <span className="text-lg md:text-xl font-semibold text-black pr-4">{faq.question}</span>
+                  <h3 className="text-lg font-semibold text-black">{faq.question}</h3>
                   <ChevronDown
-                    className={`w-5 h-5 text-black flex-shrink-0 transition-transform ${openIndex === index ? 'transform rotate-180' : ''
+                    className={`w-5 h-5 text-black transition-transform ${openIndex === index ? 'rotate-180' : ''
                       }`}
                   />
                 </button>
                 {openIndex === index && (
                   <div className="px-8 pb-6">
-                    <p className="text-base md:text-lg text-black/70 leading-relaxed">{faq.answer}</p>
+                    <p className="text-black/70 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>

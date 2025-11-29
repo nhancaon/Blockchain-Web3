@@ -25,7 +25,7 @@ export default function ReadyToApply() {
   ];
 
   return (
-    <div id="apply" className="bg-black text-white py-24">
+    <div id="apply" className="bg-black text-white py-24 relative ">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-display mb-6">
@@ -39,18 +39,20 @@ export default function ReadyToApply() {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="bg-neutral-900 rounded-2xl p-8 border border-white/10 text-left"
+                className="rounded-2xl bg-gradient-to-r from-yellow-500 to-amber-100 p-[1px]"
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 border border-white/20 rounded-full bg-white/5">
-                    <step.icon className="w-6 h-6 text-white" />
+                <div className="bg-neutral-900 rounded-2xl p-8 border border-white/10 text-left">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 border border-white/20 rounded-full bg-white/5">
+                      <step.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white font-semibold text-sm">
+                      {index + 1}
+                    </div>
                   </div>
-                  <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white font-semibold text-sm">
-                    {index + 1}
-                  </div>
+                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">{step.title}</h3>
+                  <p className="text-base md:text-lg text-white/70 leading-relaxed">{step.description}</p>
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">{step.title}</h3>
-                <p className="text-base md:text-lg text-white/70 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>

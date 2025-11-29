@@ -35,9 +35,9 @@ export default function WhatTeamsGet() {
   ];
 
   return (
-    <div className="bg-[#f6f4ee] py-24">
-      <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl md:text-5xl font-display text-black mb-16 text-center">
+    <div className="bg-black py-24 relative overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6">
+        <h2 className="text-4xl md:text-5xl font-display mb-16 text-center text-white">
           What Teams Get
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -49,8 +49,8 @@ export default function WhatTeamsGet() {
               <div className="p-3 border border-black/10 rounded-full inline-block mb-6">
                 <benefit.icon className="w-6 h-6 text-black" />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">{benefit.title}</h3>
-              <p className="text-base md:text-lg text-black/70 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-semibold text-black mb-4">{benefit.title}</h3>
+              <p className="text-black/70 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
